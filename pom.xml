@@ -111,7 +111,7 @@
             <version>RELEASE</version>
             <type>zip</type>
           </assemblyArtifact>
-          <serverName>sampleAppServer</serverName>
+          <serverName>defaultServer</serverName>
           <configFile>src/main/liberty/config/server.xml</configFile>
           <serverEnv>src/main/liberty/config/server.env</serverEnv>
           <packageFile>${package.file}</packageFile>
