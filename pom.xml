@@ -61,7 +61,7 @@
                   <groupId>org.apache.derby</groupId>
                   <artifactId>derby</artifactId>
                   <version>10.13.1.1</version>
-                  <outputDirectory>${project.build.directory}/liberty/wlp/usr/shared/resources/DerbyLibs</outputDirectory>
+                  <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/resources/DerbyLibs</outputDirectory>
                 </artifactItem>
               </artifactItems>
             </configuration>
@@ -79,7 +79,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-                <outputDirectory>${project.build.directory}/liberty/wlp/usr/shared/resources/data</outputDirectory>
+                <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/resources/data</outputDirectory>
               <resources>
                 <resource>
                   <directory>resources/data</directory>
