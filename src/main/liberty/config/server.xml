@@ -33,13 +33,13 @@
 
 	<jdbcDriver id="DerbyEmbedded" libraryRef="DerbyLib"/>
 	<library filesetRef="DerbyFileset" id="DerbyLib"/>
-	<fileset dir="${server.resource.dir}/DerbyLibs" id="DerbyFileset" includes="derby-10.13.1.1.jar"/>
+	<fileset dir="${server.config.dir}/resources/DerbyLibs" id="DerbyFileset" includes="derby-10.13.1.1.jar"/>
 
 	<authData id="TradeDataSourceAuthData" password="db_password" user="db_username"/>
 	<authData id="TradeAdminAuthData" password="db_password" user="db_username"/>
 
 	<dataSource connectionManagerRef="conMgr1" id="DefaultDataSource" isolationLevel="TRANSACTION_READ_COMMITTED" jdbcDriverRef="DerbyEmbedded" jndiName="jdbc/TradeDataSource" statementCacheSize="60"> 
-		<properties.derby.embedded createDatabase="create" databaseName="${server.resource.dir}/data/tradedb" password="db_password" user="db_username"/> 
+		<properties.derby.embedded createDatabase="create" databaseName="${server.config.dir}/resources/data/tradedb" password="db_password" user="db_username"/> 
 	</dataSource>
 
 	<messagingEngine id="defaultME">
