@@ -22,7 +22,7 @@
       <testServerHttpPort>9080</testServerHttpPort>
       <testServerHttpsPort>9443</testServerHttpsPort>
       <package.file>${project.build.directory}/${app.name}.jar</package.file>
-      <packaging.type>runable</packaging.type>
+      <packaging.type>runnable</packaging.type>
       <skipTests>false</skipTests>
     </properties>
 	
